@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
             <li className="text-2xl font-bold text-white "><Link href="/posts">Posts</Link></li>
           </ul>
         </nav> */}
-        <Navbar/>
+        {/* <Navbar/> */}
         {children}
         </body>
     </html>
