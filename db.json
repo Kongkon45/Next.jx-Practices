@@ -1,0 +1,41 @@
+{
+    "posts" : [
+        {
+            "id": 1,
+            "name": "Post One",
+            "description": "This is the first post about technology advancements. Learn about the latest innovations shaping our future.",
+            "likes_count": 120
+        },
+        {
+            "id": 2,
+            "name": "Post Two",
+            "description": "Discover the secrets of the universe in this fascinating exploration of astronomy and astrophysics.",
+            "likes_count": 85
+        },
+        {
+            "id": 3,
+            "name": "Post Three",
+            "description": "Dive into the world of literature with this insightful review of classic novels and modern bestsellers.",
+            "likes_count": 95
+        },
+        {
+            "id": 4,
+            "name": "Post Four",
+            "description": "Explore the wonders of nature through breathtaking photographs of landscapes, wildlife, and more.",
+            "likes_count": 110
+        },
+        {
+            "id": 5,
+            "name": "Post Five",
+            "description": "Uncover the mysteries of history with engaging stories about ancient civilizations and historical events.",
+            "likes_count": 130
+        },
+        {
+            "id": 6,
+            "name": "Post Six",
+            "description": "Stay updated with the latest news and developments in politics, business, and global affairs.",
+            "likes_count": 90
+        }
+    ]
+    
+}

@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light">
       <body className={inter.className}>
         {/* <nav>
           <ul className="flex gap-10 justify-center items-center h-12 bg-blue-500">
