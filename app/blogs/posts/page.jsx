@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 
+
+
 const Posts = async () => {
   const res = await fetch("http://localhost:5000/posts", {
     cache : "no-store"

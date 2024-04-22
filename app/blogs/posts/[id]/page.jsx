@@ -1,6 +1,18 @@
 import Link from 'next/link';
 import React from 'react';
 
+export async function generateStaticParams() {
+  const res = await fetch("http://localhost:5000/posts/");
+  const posts = await res.json();
+  const ids = posts?.map((post)=>{
+    return {
+      id : post.id+""
+    }
+  })
+  // console.log(ids)
+  return ids
+}
+
 const PostDetails = async ({params}) => {
     const {id} = params;
     // console.log(params.id)
@@ -11,15 +23,15 @@ const PostDetails = async ({params}) => {
         <div>
             <h2>post details page {id}</h2>
             <div className="card bg-gray-100 shadow-xl w-[50%] mx-auto my-7">
-          <div className="card-body">
-            <h2 className="card-title">{post.name}</h2>
-            <p>{post.description}</p>
-            <p>Likes : {post.likes_count}</p>
-            <div className="card-actions justify-end">
-              <Link href={`/blogs/posts`}><button className="btn btn-primary">Back</button></Link>
+              <div className="card-body">
+                <h2 className="card-title">{post.name}</h2>
+                <p>{post.description}</p>
+                <p>Likes : {post.likes_count}</p>
+                <div className="card-actions justify-end">
+                  <Link href={`/blogs/posts`}><button className="btn btn-primary">Back</button></Link>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
         </div>
     );
 };
