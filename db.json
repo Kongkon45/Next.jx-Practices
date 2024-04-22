@@ -1,16 +1,16 @@
 {
     "posts" : [
         {
-            "id": 1,
-            "name": "Post One",
+            "id": 10,
+            "name": "Post 1000",
             "description": "This is the first post about technology advancements. Learn about the latest innovations shaping our future.",
-            "likes_count": 120
+            "likes_count": 1220
         },
         {
             "id": 2,
-            "name": "Post Two",
+            "name": "Podddst Two",
             "description": "Discover the secrets of the universe in this fascinating exploration of astronomy and astrophysics.",
-            "likes_count": 85
+            "likes_count": 285
         },
         {
             "id": 3,
