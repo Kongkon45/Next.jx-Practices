@@ -1,5 +1,9 @@
 import Posts from "../components/Posts/Posts";
 
+export const metadata = {
+    title: "About Page",
+    description: "About Page Description",
+  };
 const PostsPage = () => {
     return (
         <div>
