@@ -1,28 +1,13 @@
-import getPost from '@/lib/getPost';
-import React from 'react'
+import SinglePost from '@/app/components/Posts/SinglePost';
+import React from 'react';
 
-export const generateMetadata = async ({params}) => {
-    const {id} = params;
-    const post = await getPost(id);
-    return {
-        title : post.title,
-        description : post.body
-    }
-}
-const Post = async ({params}) => {
-    const {id} = params;
-    const post = await getPost(id);
-    // console.log(post)
+const PostDetails = ({params}) => {
   return (
     <div>
-        <h2>single post page </h2>
-
-        <div className="w-1/2 border-2 mx-auto p-5 rounded-lg shadow-lg">
-        <h1 mt-6>{post.title}</h1>
-        <p>{post.body}</p>
-        </div>
+      <h3 className="text-center my-4 text-4xl font-bold">Single Post</h3>
+      <SinglePost id={params.id}/>
     </div>
-  )
-}
+  );
+};
 
-export default Post
+export default PostDetails;

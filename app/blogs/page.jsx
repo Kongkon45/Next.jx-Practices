@@ -25,6 +25,7 @@ const Blogs = () => {
                 </ul>
             })
         }
+        
     </div>
   )
 }

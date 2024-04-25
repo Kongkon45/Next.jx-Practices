@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Navbar from "./shared/Navbar";
+import ReduxProvider from './../redux/features/provider/ReduxProvider';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +23,11 @@ export default function RootLayout({ children }) {
             <li className="text-2xl font-bold text-white "><Link href="/posts">Posts</Link></li>
           </ul>
         </nav> */}
-        <Navbar/>
-        {children}
-        </body>
+        <ReduxProvider>
+          <Navbar />
+          {children}
+        </ReduxProvider>
+      </body>
     </html>
   );
 }
